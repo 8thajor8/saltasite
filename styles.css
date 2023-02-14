@@ -3,7 +3,7 @@ body{
 }
 
 
-#main__nav .nav-link{
+.main__nav .nav-link{
     color: white;
     font-size: 1.2rem;
     
@@ -17,6 +17,132 @@ body{
     transition: all 0.5s;
 }
 
+.sticky__bottom{
+    width: 65px;
+    height: 65px;
+    margin-bottom: 25px;
+    -webkit-box-shadow: inset 8px 8px 15px -4px rgba(0,0,0,0.59);
+    -moz-box-shadow: inset 8px 8px 15px -4px rgba(0,0,0,0.59);
+    box-shadow: inset 8px 8px 15px -4px rgba(0,0,0,0.59);
+    border-radius: 50px;
+    border: solid 2px rgba(133, 129, 129, 0.3)
+}
+
+.sticky__bottom i{
+    font-size: 1.6rem;
+    color: #584f4f;
+    padding-left: 3px;
+    padding-top: 6px;
+}
+
+
+#offcanvasBottom{
+    height: 90%;
+    padding: 5%;
+    background-color: rgb(211, 241, 241);
+
+}
+
+
+.offcanvasBottom__body{
+    padding: 0%;
+}
+
+.offcanvasBottom__menu{
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.offcanvasBottom__menu__item{
+    width: 100%;
+    text-align: start;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    border-bottom: solid 1px gray;
+    align-items: end;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.offcanvasBottom__menu__link{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+
+}
+
+.offcanvasBottom__menu__link i{
+    position: absolute;
+    bottom: 1;
+    right: 0;
+}
+
+
+
+.border__tittle{
+    border-bottom: 1px solid #6a2b3e;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+    border-image: linear-gradient(to right, #6a2b3e 75%, transparent 75%) 100% 1;
+    position: relative;
+}
+
+.border__tittle a{
+    text-decoration: none;
+}
+
+.border__tittle i{
+    position: absolute;
+    bottom: 1;
+    right: 0;
+    margin-right: 50px;
+    color: #000;
+}
+
+.offcanvasBottom__container__tittle{
+    color: #6a2b3e;
+    
+    padding-bottom: 5px;
+    margin-right: 50px;
+    margin-left: 3px;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    
+}
+
+
+.offcanvasBottom__container__item{
+    
+    padding: 10px 0px; 
+    list-style-type: none;
+    
+}
+
+.offcanvasBottom__container__item:hover{
+    background-color: rgb(226, 225, 225);
+    border-radius: 8px;
+}
+
+
+.offcanvasBottom__container__link{
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    
+}
+
+
+
+
 .menu__scroll {
     background: black;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
@@ -24,6 +150,10 @@ body{
 
 .logo__box{
     padding-left: 5%;
+}
+
+.navbar-brand img{
+    width: 60%;
 }
 
 .overlay {
@@ -37,33 +167,32 @@ body{
     z-index: 1;
 }
 
+
+
 .dropdown-toggle::after {
     content: none;
 }
 
 
-
 .ul__columns{
-    min-width: 900px;
     
+    min-width: 900px;
     -webkit-box-shadow: 0px -5px 0px -2px rgba(106,43,62,0.88);
     -moz-box-shadow: 0px -5px 0px -2px rgba(106,43,62,0.88);
     box-shadow: 0px -5px 0px -2px rgba(106,43,62,0.88);
     list-style-type: none;
-    
+}
 
-    }
 
 .ul__columns2{
     min-width: 350px;
-    
     -webkit-box-shadow: 0px -5px 0px -2px rgba(106,43,62,0.88);
     -moz-box-shadow: 0px -5px 0px -2px rgba(106,43,62,0.88);
     box-shadow: 0px -5px 0px -2px rgba(106,43,62,0.88);
     list-style-type: none;
     
 
-    }
+}
 
 .dropdown__container__tittle{
     color: #6a2b3e;
@@ -97,6 +226,7 @@ body{
     
 }
 
+
 .dropdown-center:hover .dropdown-menu{
     display:block;
     visibility: visible;
@@ -115,6 +245,12 @@ body{
     transition:.5s ease all;
 }
 
+@media only screen and (min-width: 992px) {
+
+	.navbar-brand img{
+        width: 100%;
+    }
+}
 
 .burger__box{
     padding-right: 7%;
@@ -135,18 +271,85 @@ body{
 }
 
 #offcanvasExample{
-    width: 50%;
+    width: 100%;
     
     align-items: stretch; 
 }
+
+#offcanvasExampleLabel{
+    margin-left: 20px;
+    width: 70%;
+}
+
+.side__menu__link{
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    margin-left: 5px;
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+
+}
+
+.side__menu__link:hover{
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+
+.offcanvas-body{
+    padding-left: 0;
+    margin-top: 30%;
+}
+
+.side__menu__list{
+    padding-left: 0;
+    
+}
+
+.side__menu__sublink{
+    
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin-left: 7px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+	#offcanvasExample{
+        width: 50%;
+    }
+    #offcanvasExampleLabel{
+        margin-left: 3.5rem;
+        width: 40%;
+    }
+    .side__menu__link{
+        font-size: 1.4rem;
+        margin-left: 3.5rem;
+        
+    }
+    .side__menu__link:hover{
+        font-size: 1.6rem;
+    
+    }
+    .side__menu__sublink{
+        margin-left: 3.5rem;
+        
+    }
+   
+}
+
+
 
 .row__container{
     height: 100vh;
 }
 
-#offcanvasExampleLabel{
-    margin-left: 3.5rem;
-}
+
 .offcanvas__col1{
     height:100%;
 }
@@ -162,27 +365,14 @@ body{
     justify-content: flex-start;
 }
 
-.side__menu__link{
-    font-size: 1.4rem;
-    line-height: 2.5rem;
-    margin-left: 3.5rem;
-    text-decoration: none;
-    color: rgb(34, 34, 34);
 
-}
-
-.side__menu__link:hover{
-    font-weight: 700;
-    font-size: 1.6rem;
-
-}
 
 .offcanvas__col2{
     background-color: #f5c469;
 }
 
 .side__subcontainer{
-    padding-top: 20%;
+    padding-top: 30%;
 }
 
 .side__menu__subitem{
@@ -192,16 +382,6 @@ body{
     display: flex;
     -webkit-box-pack: start;
     justify-content: flex-start;
-}
-
-.side__menu__sublink{
-    
-    font-weight: 500;
-    line-height: 2.5rem;
-    margin-left: 3.5rem;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-
 }
 
 .side__menu__link:hover,.side__menu__sublink:hover{
@@ -222,7 +402,16 @@ body{
 }
 
 .carousel-item{
-    height: 60vh;
+    height: 40vh;
+}
+
+
+@media only screen and (min-width: 992px) {
+
+	.carousel-item{
+        height: 60vh;
+    }
+
 }
 
 .carousel__img{
@@ -355,12 +544,29 @@ body{
 .container__grid{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(3,auto);
-    grid-gap: 30px;
+    grid-template-columns: 1fr;
     
 
 }
+
+.elemento__grid{
+    margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 992px) {
+    .container__grid{
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(3,auto);
+        grid-gap: 20px;
+    }
+    .elemento__grid{
+        margin-bottom: 0px;
+    }
+
+}
+
+
+
 
 .card{
     border: none;

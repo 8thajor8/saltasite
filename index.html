@@ -22,9 +22,146 @@
                     <img src="assets/logo-turismo-salta.png" class="py-4" alt="" width="" height="">
                 </a>
             </div>
-        
-            <nav class="navbar navbar-expand-lg " >
-                <ul id="main__nav" class="navbar-nav">
+
+            <!-- Menu Mobile -->
+            <button class="fixed-bottom sticky__bottom container d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+
+            <div class="offcanvas offcanvas-bottom d-lg-none" tabindex="-1" id="offcanvasBottom">
+                <div class="d-flex justify-content-end">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                </div>
+
+                
+                <div class="offcanvasBottom__body ">
+                    <ul class="offcanvasBottom__menu align-items-end">
+                        <li class="offcanvasBottom__menu__item"><a class="offcanvasBottom__menu__link" aria-current="page" href="#">Home</a></li>
+
+                        <li class="offcanvasBottom__menu__item"><a class="offcanvasBottom__menu__link" data-bs-toggle="collapse" href="#collapsePlanea" role="button" aria-expanded="false" aria-controls="collapsePlanea">
+                            Planea tu Viaje<i class="fa-solid fa-chevron-down"></i>
+                        </a></li>
+                            
+                        <div id="collapsePlanea" class="collapse">
+                            <div class="d-flex border__tittle"><a class="" data-bs-toggle="collapse" href="#collapseAccesibilidad" role="button" aria-expanded="false" aria-controls="collapseAccesibilidad">
+                                <span class="offcanvasBottom__container__tittle">Accesibilidad</span><i class="fa-solid fa-chevron-down"></i></a></div>
+                            
+                            <ul id="collapseAccesibilidad" class="pb-3 px-0 collapse">
+                                <li class="dropdown__container__item pt-3">
+                                    <a class="dropdown__container__link" href="#">Como llegar a Salta</a>
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link" href="#">Como moverse</a> 
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link" href="#">Donde dormir</a> 
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link" href="#">Alquiler de autos y camionetas</a>
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link" href="#">Informacion util</a> 
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link" href="#">Datos utiles</a> 
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link" href="#">Requisitos de ingreso</a>
+                                </li>
+                            </ul>
+
+                            <div class="d-flex border__tittle"><a class="" data-bs-toggle="collapse" href="#collapseQueHacer" role="button" aria-expanded="false" aria-controls="collapseQueHacer">
+                                <span class="offcanvasBottom__container__tittle">Que Hacer y Conocer</span><i class="fa-solid fa-chevron-down"></i></a></div>
+                            
+                            <ul id="collapseQueHacer" class="pb-3 px-0 collapse">
+                                <li class="dropdown__container__item pt-3">
+                                    <a class="dropdown__container__link" href="#">Salta natural</a>
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link" href="#">Salta autentica</a>
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link" href="#">Entretenimientos</a>
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link" href="#">Salud y bienestar</a>
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link" href="#">Salta Gourmet</a>
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link" href="#">Safaris</a>
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link" href="#">Salta Activa</a>
+                                </li>
+                            </ul>
+                        
+                        
+                            <div class="d-flex border__tittle"><a class="" data-bs-toggle="collapse" href="#collapseDondeIr" role="button" aria-expanded="false" aria-controls="collapseDondeIr">
+                                <span class="offcanvasBottom__container__tittle">Donde Ir</span><i class="fa-solid fa-chevron-down"></i></a></div>
+                            
+                            <ul id="collapseDondeIr" class="pb-3 px-0 collapse">
+                                <li class="dropdown__container__item pt-3">
+                                    <a class="dropdown__container__link" href="#">Excursiones</a>
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link" href="#">Circuitos turisticos</a>
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link" href="#">Rutas tematicas</a>
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link" href="#">Reservas y parques nacionales</a>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+
+                        <li class="offcanvasBottom__menu__item"><a class="offcanvasBottom__menu__link" data-bs-toggle="collapse" href="#collapseInstitucional" role="button" aria-expanded="false" aria-controls="collapseInstitucional">
+                            Institucional<i class="fa-solid fa-chevron-down"></i>
+                        </a></li>
+
+                        <div id="collapseInstitucional" class="collapse">
+                            <ul class="p-0">
+                                <li class="dropdown__container__item pt-3">
+                                    <a class="dropdown__container__link ps-4" href="#">Autoridades</a>
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link ps-4" href="#">Legislacion</a> 
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link ps-4" href="#">Estadisticas</a> 
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link ps-4" href="#">Inversiones</a>
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link ps-4" href="#">Capacitacion</a> 
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link ps-4" href="#">Promocion</a> 
+                                </li>
+                                <li class="dropdown__container__item">
+                                    <a class="dropdown__container__link ps-4" href="#">Noticias</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <li class="offcanvasBottom__menu__item"><a class="offcanvasBottom__menu__link" aria-current="page" href="#">Contacto</a></li>
+                        </div>
+                    </ul>
+                
+            </div>
+            
+
+            <!-- Menu Large -->
+            <nav  class="d-none d-lg-flex navbar navbar-expand-lg " >
+                <ul id="" class="navbar-nav main__nav collapse navbar-collapse">
                     <li class="nav-item mx-2">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
@@ -35,8 +172,10 @@
                                 <div class="dropdown__container">
                                     <div class="row">
                                         <div class="col-lg-4">
+                                            
                                             <div class="mb-3"><span class="dropdown__container__tittle">Accesibilidad</span></div>
-                                            <ul class="p-0">
+                                            
+                                            <ul id="collapseSmall" class="p-0">
                                                 <li class="dropdown__container__item pt-3">
                                                     <a class="dropdown__container__link" href="#">Como llegar a Salta</a>
                                                 </li>
@@ -161,6 +300,8 @@
                 </ul>
             </nav>
 
+
+           <!--Comienzo Side Menu -->
             <div class="burger__box">
                 <button class="burger__button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                     <div></div>
@@ -227,7 +368,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
+            <!-- Fin side Menu -->
         </div>
     </header>
 
@@ -259,7 +401,7 @@
         <div class="container-fluid">
             <div class="wrapper d-flex justify-content-center">
                 
-                <ul class="nav">
+                <ul class="nav justify-content-center">
                     <li class="hm">
                         <div class="icon text-center"><i class="fa-solid fa-bed"></i></div>
                         <span class="px-1">Hoteles y Alojamiento</span>
